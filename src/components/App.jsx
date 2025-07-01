@@ -69,7 +69,7 @@ const portfolioData = {
     {
       title: "지속적 학습 및 풀스택 역량",
       description:
-        "프론트엔드뿐만 아니라 백엔드 기술도 학습하여 \n풀스택 개발의 잠재력을 보여줌. \n최신 기술 트렌드에 대해 꾸준히 학습하고,\n 새로운 도전을 추구.",
+        "프론트엔드뿐만 아니라 백엔드까지 학습하며 \n풀스택 개발자로 성장 중. \n기술에 대한 호기심과 도전적인 환경에서의 성장을 지향.",
     },
   ],
   projects: [
@@ -98,6 +98,26 @@ const portfolioData = {
           type: "link",
           url: "https://jport-nextsite.netlify.app/?utm_source=portfolio&utm_medium=project",
           name: "Next.js 버전",
+        },
+        {
+          type: "github",
+          url: "https://github.com/alex8396/port2024-vue",
+          name: "Vue.js 버전 github",
+        },
+        {
+          type: "github",
+          url: "https://github.com/alex8396/port2024-vite",
+          name: "Vite 버전 github",
+        },
+        {
+          type: "github",
+          url: "https://github.com/alex8396/port2024-react",
+          name: "React github",
+        },
+        {
+          type: "github",
+          url: "https://github.com/alex8396/port2024-next",
+          name: "Next.js 버전 github",
         },
       ],
     },
