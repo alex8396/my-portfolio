@@ -15,6 +15,7 @@ const portfolioData = {
     birthDate: "2000-03-27",
     phone: "010-6603-8396",
     email: "alex8396@naver.com",
+    github: "https://github.com/alex8396",
   },
   skills: {
     Languages: ["TypeScript", "JavaScript", "Python"],
@@ -77,7 +78,7 @@ const portfolioData = {
       title: "JPort 포트폴리오 시리즈",
       stack: ["Vue.js", "Vite", "React", "Next.js"],
       description:
-        "다양한 프레임워크를 비교하고, 각 기술 스택의 특성과 장단점을 이해하는 프로젝트입니다. Vue.js, Vite, React, Next.js로 동일한 포트폴리오를 구현하여 각 프레임워크에 대한 숙련도를 입증했습니다.",
+        "다양한 프레임워크를 비교하고,\n각 기술 스택의 특성과 장단점을\n 이해하는 프로젝트입니다.\n동일한 포트폴리오를 구현하여\n 각 프레임워크에 대한 숙련도를 입증했습니다.",
       links: [
         {
           type: "link",
@@ -125,7 +126,7 @@ const portfolioData = {
       title: "About Me Site & JPort Ver1",
       stack: ["HTML", "CSS", "JavaScript", "GSAP"],
       description:
-        "개인 자기소개 웹사이트로, GSAP를 활용하여 몰입감 있는 애니메이션을 구현한 프로젝트입니다. 스크롤 애니메이션과 전환 효과를 통해 직관적인 탐색 경험을 제공합니다.",
+        "개인 자기소개 웹사이트로, \nGSAP를 활용하여 몰입감 있는 \n애니메이션을 구현한 프로젝트입니다.\n 스크롤 애니메이션과 전환 효과를 통해\n 직관적인 탐색 경험을 제공합니다.\n링크를 클릭 하시면 보다 많은\n프로젝트를 볼 수 있습니다.",
       links: [
         {
           type: "link",
@@ -148,7 +149,7 @@ const portfolioData = {
       title: "GitPulse 프로젝트",
       stack: ["React", "GitHub API", "JavaScript", "CSS"],
       description:
-        "GitHub API를 활용하여 팀의 GitHub 활동을 시각화하고, 협업 문화를 개선할 수 있는 웹 애플리케이션을 개발한 프로젝트입니다.",
+        "GitHub API를 활용하여 \n팀의 GitHub 활동을 시각화하고, \n협업 문화를 개선할 수 있는 \n웹 애플리케이션을 개발한 프로젝트입니다.",
       links: [
         {
           type: "github",
@@ -161,7 +162,7 @@ const portfolioData = {
       title: "Weather Jockey",
       stack: ["React", "JavaScript", "SCSS"],
       description:
-        "사용자 위치 기반 날씨 API를 활용하여 날씨에 맞는 음악을 추천해주는 웹 애플리케이션입니다. 날씨 변화에 따라 사용자에게 개인화된 콘텐츠를 제공합니다.",
+        "사용자 위치 기반 날씨 API를 활용하여 \n날씨에 맞는 음악을 추천해주는 웹 애플리케이션입니다.\n 날씨 변화에 따라 사용자에게\n 개인화된 콘텐츠를 제공합니다.",
       links: [
         {
           type: "github",
@@ -197,7 +198,7 @@ const portfolioData = {
       title: "민도커튼월 웹사이트",
       stack: ["HTML", "CSS", "JavaScript"],
       description:
-        "실제 기업 웹사이트를 개발하고 배포한 경험이 있습니다. 고객의 요구 사항을 반영하여 실용적인 웹사이트를 구현했습니다.",
+        "실제 기업 웹사이트를 개발하고 배포한 경험이 있습니다. \n고객의 요구 사항을 반영하여 \n실용적인 웹사이트를 구현했습니다.",
       links: [
         {
           type: "link",
@@ -320,16 +321,25 @@ const AboutSection = () => {
         }}
       >
         <p>
-          <strong>이름:</strong> {name}
+          <strong>이름 :</strong>
+          {name}
         </p>
         <p>
-          <strong>생년월일:</strong> {birthDate}
+          <strong>생년월일 :</strong>
+          {birthDate}
         </p>
         <p>
-          <strong>전화번호:</strong> {phone}
+          <strong>전화번호 :</strong>
+          {phone}
         </p>
         <p>
-          <strong>이메일:</strong> {email}
+          <strong>이메일 :</strong>
+          {email}
+        </p>
+        <p>
+          <strong>
+            <a href="https://github.com/alex8396">Github</a>
+          </strong>
         </p>
       </div>
     </section>
@@ -389,7 +399,14 @@ const ProjectCard = ({ project }) => (
         </span>
       ))}
     </div>
-    <p>{project.description}</p>
+    <p>
+      {project.description.split("\n").map((line, idx) => (
+        <React.Fragment key={idx}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
+    </p>
     <div className="project-links">
       {project.links.map(({ url, name, type }, i) => (
         <a
