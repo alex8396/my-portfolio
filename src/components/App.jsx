@@ -166,7 +166,7 @@ const portfolioData = {
         {
           type: "github",
           url: "https://github.com/alex8396/weatherjockey",
-          name: "GitHub",
+          name: "Weather Jockey GitHub",
         },
       ],
     },
