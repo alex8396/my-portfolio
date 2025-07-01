@@ -112,7 +112,7 @@ const portfolioData = {
         {
           type: "github",
           url: "https://github.com/alex8396/port2024-react",
-          name: "React github",
+          name: "React 버전 github",
         },
         {
           type: "github",
