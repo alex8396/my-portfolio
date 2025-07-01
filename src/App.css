@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #f5f7fa; /* 부드러운 밝은 텍스트 */
+  background-color: #121a26; /* 다크 네이비 느낌 배경 */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+
+  will-change: filter;
+  transition: filter 300ms ease;
+
+  &:hover {
+    filter: drop-shadow(0 0 2em #8ecfffaa); /* 부드러운 파스텔 블루 쉐도우 */
+  }
+
+  &.react:hover {
+    filter: drop-shadow(0 0 2em #40c4ffbb); /* 파스텔 블루 강조 */
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin 20s linear infinite;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #1f2a3a; /* 어두운 배경색으로 카드 구분 */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(25, 40, 70, 0.4);
+  color: #e0e6f2; /* 카드 내 텍스트 연한 회색 */
+}
+
+.read-the-docs {
+  color: #9aa7c1; /* 부드러운 중간톤 회색 */
+}
