@@ -154,7 +154,7 @@ const portfolioData = {
       title: "톡톡 블로그",
       stack: ["React", "Node.js", "Express"],
       description:
-        "프론트엔드와 백엔드를 \n모두 다룬 블로그 웹사이트 프로젝트입니다. 서버 사이드 렌더링과 RESTful API 설계를 포함하여 풀스택 개발 경험을 쌓았습니다.",
+        "프론트엔드와 백엔드를 \n모두 다룬 블로그 웹사이트 프로젝트입니다.\n 서버 사이드 렌더링과 RESTful API 설계를 포함하여 풀스택 개발 경험을 쌓았습니다.",
       links: [
         {
           type: "link",
